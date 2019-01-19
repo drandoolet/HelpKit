@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainCounterTextView"
+        android:layout_width="@dimen/dimen_random_bounds"
+        android:layout_height="@dimen/dimen_random_bounds"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/save3Button"
+        app:layout_constraintStart_toStartOf="@+id/save2Button"
+        app:layout_constraintTop_toBottomOf="@+id/save2Button" />
+
+    <TextView
+        android:id="@+id/save1TextView"
+        android:layout_width="@dimen/dimen_click_save"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/save2TextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/save2TextView"
+        android:layout_width="@dimen/dimen_click_save"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/save3TextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save1TextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/save3TextView"
+        android:layout_width="@dimen/dimen_click_save"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/save4TextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save2TextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/save4TextView"
+        android:layout_width="@dimen/dimen_click_save"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save3TextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="click"
+        app:layout_constraintEnd_toEndOf="@+id/mainCounterTextView"
+        app:layout_constraintStart_toStartOf="@+id/mainCounterTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mainCounterTextView" />
+
+    <ImageButton
+        android:id="@+id/save1Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/save1TextView"
+        app:layout_constraintStart_toStartOf="@+id/save1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/save1TextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/save2Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/save2TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/save2TextView"
+        app:layout_constraintTop_toBottomOf="@+id/save2TextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/save3Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/save3TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/save3TextView"
+        app:layout_constraintTop_toBottomOf="@+id/save3TextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/save4Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_click_save"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/save4TextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/save4TextView"
+        app:layout_constraintTop_toBottomOf="@+id/save4TextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</android.support.constraint.ConstraintLayout>
