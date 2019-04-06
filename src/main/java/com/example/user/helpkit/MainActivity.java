@@ -98,6 +98,11 @@ public class MainActivity extends AppCompatActivity
             ClickerFragment fragment = new ClickerFragment();
             transaction.replace(R.id.container, fragment, "clicker");
             transaction.commit();
+        } else if (id == R.id.nav_date) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            DateProcessorFragment fragment = new DateProcessorFragment();
+            transaction.replace(R.id.container, fragment, "date processor");
+            transaction.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

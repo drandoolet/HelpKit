@@ -12,6 +12,10 @@
             android:id="@+id/nav_clicker"
             android:icon="@drawable/ic_clicker"
             android:title="Clicker" />
+        <item
+            android:id="@+id/nav_date"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="DateProcessor" />
     </group>
 
     <item android:title="Communicate">

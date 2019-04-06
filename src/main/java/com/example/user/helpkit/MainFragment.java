@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 public class MainFragment extends Fragment {
-    private ImageButton fragment1Button, fragment2Button;
+    private ImageButton fragment1Button, fragment2Button, fragment3Button;
 
 
     @Override
@@ -20,8 +20,9 @@ public class MainFragment extends Fragment {
 
         fragment1Button = view.findViewById(R.id.fragment1ImageButton);
         fragment2Button = view.findViewById(R.id.fragment2ImageButton);
+        fragment3Button = view.findViewById(R.id.fragment3ImageButton);
 
-        ImageButton[] buttons = {fragment1Button, fragment2Button};
+        ImageButton[] buttons = {fragment1Button, fragment2Button, fragment3Button};
         for (ImageButton button : buttons) button.setOnClickListener(buttonListener);
 
         return view;
@@ -34,6 +35,7 @@ public class MainFragment extends Fragment {
             switch (view.getId()) {
                 case R.id.fragment1ImageButton: fragment = new RandomizerFragment(); break;
                 case R.id.fragment2ImageButton: fragment = new ClickerFragment(); break;
+                case R.id.fragment3ImageButton: fragment = new DateProcessorFragment(); break;
             }
             if (fragment != null) {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();

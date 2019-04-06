@@ -30,4 +30,14 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fragment1ImageButton"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/fragment3ImageButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_main_button"
+        android:layout_marginTop="8dp"
+        android:foreground="@drawable/ic_date_range_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/fragment1ImageButton"
+        app:layout_constraintStart_toStartOf="@+id/fragment1ImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1ImageButton" />
 </android.support.constraint.ConstraintLayout>
