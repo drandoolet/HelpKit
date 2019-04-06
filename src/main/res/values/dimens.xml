@@ -8,4 +8,5 @@
     <dimen name="dimen_random_bounds">80dp</dimen>
     <dimen name="dimen_click_save">50dp</dimen>
     <dimen name="dimen_main_button">120dp</dimen>
+    <dimen name="dimen_arrowbutton_width">30dp</dimen>
 </resources>
